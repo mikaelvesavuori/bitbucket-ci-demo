@@ -1,0 +1,24 @@
+image: node:alpine
+
+pipelines:
+  branches:
+    main:
+      - step:
+          name: Inputs
+          script:
+            - echo "MESSAGE ---> '$FIGMA_MESSAGE'"
+            - echo "VERSION ---> '$FIGMA_VERSION'"
+          caches:
+            - node
+      - step:
+          name: Install Figmagic
+          script:
+            - npm install -D figmagic
+          caches:
+            - node
+      - step:
+          name: Run Figmagic and use latest Figma data
+          script:
+            - npx figmagic --token=$FIGMA_TOKEN --url=$FIGMA_URL --versionName=$FIGMA_VERSION
+          caches:
+            - node
