@@ -33,11 +33,11 @@ For authentication, in case you use a client like Insomnia, just use the built-i
 POST https://api.bitbucket.org/2.0/repositories/YOUR_WORKSPACE_OR_USER/YOUR_REPO/pipelines/#post
 
 {
-	"target": {
-		"ref_type": "branch",
-		"type": "pipeline_ref_target",
-		"ref_name": "main"
-	}
+  "target": {
+    "ref_type": "branch",
+    "type": "pipeline_ref_target",
+    "ref_name": "main"
+  }
 }
 ```
 
