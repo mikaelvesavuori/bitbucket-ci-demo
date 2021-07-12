@@ -19,7 +19,7 @@ Set both to be secret values.
 
 The ideal use seems to be to use an application password, instead of any personal credentials.
 
-To do this, first [create an app password](https://bitbucket.org/account/settings/app-passwords/). You will need the token (password) and your Bitbucket username ([you can see it in the Account Settings page](https://bitbucket.org/account/settings/); it'snot your email!) for authenticating.
+To do this, first [create an app password](https://bitbucket.org/account/settings/app-passwords/). You will need the token (password) and your Bitbucket username ([you can see it in the Account Settings page](https://bitbucket.org/account/settings/); it's not your email!) for authenticating.
 
 ## Example call to API
 
