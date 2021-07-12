@@ -51,23 +51,21 @@ This is same as above, but you should also pass `variables` in your payload. Use
 POST https://api.bitbucket.org/2.0/repositories/YOUR_WORKSPACE_OR_USER/YOUR_REPO/pipelines/#post
 
 {
-	"target": {
-		"ref_type": "branch",
-		"type": "pipeline_ref_target",
-		"ref_name": "main"
-	},
-	"variables": [
-		{
-			"key": "FIGMA_VERSION",
-			"value": "something-here-alright",
-			"secured": false
-		},
-		{
-			"key": "FIGMA_MESSAGE",
-			"value": "This is what happened",
-			"secured": false
-		}
-	]
+  "target": {
+    "ref_type": "branch",
+    "type": "pipeline_ref_target",
+    "ref_name": "main"
+  },
+  "variables": [{
+    "key": "FIGMA_VERSION",
+    "value": "something-here-alright",
+    "secured": false
+  },
+  {
+    "key": "FIGMA_MESSAGE",
+    "value": "This is what happened",
+    "secured": false
+  }]
 }
 ```
 
