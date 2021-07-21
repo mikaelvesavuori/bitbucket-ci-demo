@@ -17,7 +17,7 @@ pipelines:
           caches:
             - node
       - step:
-          name: Run Figmagic and use latest Figma data
+          name: Run Figmagic and use Figma versioned data (latest, as default)
           script:
             - npx figmagic --token=$FIGMA_TOKEN --url=$FIGMA_URL --versionName=$FIGMA_VERSION
           caches:
